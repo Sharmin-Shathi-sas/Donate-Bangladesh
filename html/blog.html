@@ -1,39 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="icon" href="assets/favicon (2).png" type="image/x-icon">
+    <link rel="icon" href="../assets/favicon (2).png" type="image/x-icon">
     <title>Donate Bangladesh</title>
 </head>
-<body>
 
-    <div class="bg-[#F9F7F3] bg-opacity-30">
-        <!--navbar-->
-        <div class="px-8 py-2 md:px-24 py-4">
-            <div class="navbar">
-                <div class="navbar-start">
-                    <button class="bg-[#B4F461] text-black font-bold px-6 py-2 rounded-md" id="home-button">Home</button>
-                </div>
-                <div class="navbar-center">
-                    <img src="../assets/logo.png" alt="">
-                    <a class="btn btn-ghost font-bold text-lg py-2 hidden md:block">Donate Bangladesh</a>
-                </div>
-                <div class="navbar-end">
-                    <div>
-                        <img src="../assets/coin.png" alt="">
+<body>
+    <header class="sticky top-0 z-50 backdrop-filter backdrop-blur-lg">
+        <div class="bg-[#F9F7F3] bg-opacity-50">
+
+            <!--navbar-->
+            <div class="px-8 py-2 md:px-24 py-4">
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <button class="bg-[#B4F461] text-black font-bold px-6 py-2 rounded-md"
+                            id="home-button">Home</button>
                     </div>
-                    <div>
-                        <h3 class="font-bold text-lg "><span id="cash-amount" class="pl-2 pr-1">5500</span>BDT</h3>
+                    <div class="navbar-center">
+                        <img src="../assets/logo.png" alt="">
+                        <a class="btn btn-ghost font-bold text-lg py-2 hidden md:block">Donate Bangladesh</a>
+                    </div>
+                    <div class="navbar-end">
+                        <div>
+                            <img src="../assets/coin.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg "><span id="cash-amount" class="pl-2 pr-1">5500</span>BDT</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <script src="../js/donation.js"></script>
+    </header>
+    <main class="px-8 md:px-24 py-4">
+
+      <div class="font-bold text-3xl flex items-center gap-3 my-6">
+        <h1 class="">Important FAQ</h1>
+        <img src="../assets/speech-bubble.gif" alt="animated icon" class="w-12 h-12">
+     </div>
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="checkbox" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+              <div class="collapse-content">
+                <p>Document Object Model(DOM) narrate HTML document in a hierarchical tree sturcture manner, where each and every attribute, element and text component is considered as a node.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="checkbox" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-content">
+                <p>There are several ways to get an element. Such as: <br><br>
+                  getElementById <br>
+                  'const element = document.getElementById('element');' <br> <br>
+                  getElementsByTagName <br>
+                  const elements = document.getElementsByTagName('div');<br> <br>
+                  querySelector <br>
+                  'const element = document.querySelector('.className');
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="checkbox" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the Dom, and why is it useful?</div>
+              <div class="collapse-content">
+                <p>In JavaScript, event listener attached to parent element and it manage its multiple child element. It help to improve performance, lessen complexity and handle dynamic content automatically.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="checkbox" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you manipulated an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>Element's attributes can be manuplated by using 'getAttribute', 'setAttribute', 'removeAttribute' and can be styled by using 'style' which are the methods of DOM.</p>
+                </div>
+              </div>
+          </div>
+    </main>
+    <script src="../js/blog.js"></script>
 </body>
+
 </html>
